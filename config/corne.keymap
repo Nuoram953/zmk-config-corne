@@ -74,89 +74,9 @@
     combos {
         compatible = "zmk,combos";
 
-        escape {
-            bindings = <&kp ESCAPE>;
-            key-positions = <13 29>;
-        };
-
         delete {
             bindings = <&kp DELETE>;
             key-positions = <15 21>;
-        };
-
-        perc {
-            bindings = <&kp PERCENT>;
-            key-positions = <5 17>;
-        };
-
-        equal {
-            bindings = <&kp EQUAL>;
-            key-positions = <28 16>;
-        };
-
-        dollar {
-            bindings = <&kp DOLLAR>;
-            key-positions = <4 16>;
-        };
-
-        pound {
-            bindings = <&kp POUND>;
-            key-positions = <3 15>;
-        };
-
-        at {
-            bindings = <&kp AT>;
-            key-positions = <2 14>;
-        };
-
-        backslash {
-            bindings = <&kp BACKSLASH>;
-            key-positions = <26 14>;
-        };
-
-        copy {
-            bindings = <&kp K_COPY>;
-            key-positions = <28 27>;
-        };
-
-        paste {
-            bindings = <&kp K_PASTE>;
-            key-positions = <26 27>;
-        };
-
-        star {
-            bindings = <&kp STAR>;
-            key-positions = <8 20>;
-        };
-
-        slash {
-            bindings = <&kp SLASH>;
-            key-positions = <32 20>;
-        };
-
-        plus {
-            bindings = <&kp PLUS>;
-            key-positions = <7 19>;
-        };
-
-        minus {
-            bindings = <&kp KP_MINUS>;
-            key-positions = <31 19>;
-        };
-
-        underscore {
-            bindings = <&kp UNDER>;
-            key-positions = <30 18>;
-        };
-
-        para-less {
-            bindings = <&paraless>;
-            key-positions = <20 19>;
-        };
-
-        para-great {
-            bindings = <&paragreat>;
-            key-positions = <20 21>;
         };
 
         Semicolon {
@@ -192,10 +112,10 @@
             // | GUI | CTRL | SHFT | LWR | SPC |   | ENT | RSE  | BKSP | ALT | ESC |
 
             bindings = <
-&none  &kp Q  &kp W  &kp F     &kp P  &kp B        &kp J    &kp L      &kp U         &kp Y    &kp P     &none
-&none  &kp A  &kp R  &kp S     &kp T  &kp G        &kp M    &kp N      &kp E         &kp I    &kp O     &none
-&none  &kp Z  &kp X  &kp C     &kp V  &kp V        &kp K    &kp H      &kp COMMA     &kp DOT  &kp FSLH  &none
-                     &kp LGUI  &mo 1  &kp SPACE    &kp RET  &lt 2 TAB  &kp LEFT_ALT
+&none  &kp Q       &kp W       &kp F        &kp P             &kp B        &kp J    &kp L         &kp U         &kp Y            &kp P            &none
+&none  &hm LWIN A  &hm LALT R  &hm LCTRL S  &hm LEFT_SHIFT T  &kp G        &kp M    &hm RSHIFT N  &hm RCTRL E   &hm RIGHT_ALT I  &hm RIGHT_WIN O  &none
+&none  &kp Z       &kp X       &kp C        &kp V             &kp V        &kp K    &kp H         &kp COMMA     &kp DOT          &kp FSLH         &none
+                               &kp LGUI     &mo 1             &kp SPACE    &kp RET  &lt 2 TAB     &kp LEFT_ALT
             >;
         };
 
