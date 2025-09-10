@@ -85,7 +85,7 @@
         };
 
         BaseToGam {
-            bindings = <&tog 5>;
+            bindings = <&tog 0>;
             key-positions = <38 39>;
             layers = <0>;
         };
@@ -93,7 +93,6 @@
         GamToBase {
             bindings = <&tog 0>;
             key-positions = <38 39>;
-            layers = <5>;
         };
     };
 
@@ -175,17 +174,19 @@
 
         GAM {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+&trans  &kp G           &kp Q  &kp W      &kp E         &kp R        &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LEFT_SHIFT  &kp A  &kp S      &kp D         &kp F        &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LCTRL       &kp Z  &kp X      &kp C         &kp V        &trans  &trans  &trans  &trans  &trans  &trans
+                               &lt 6 TAB  &kp LEFT_ALT  &kp SPACE    &trans  &trans  &trans
             >;
+
+            label = "Gaming";
         };
 
         GAM_2 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp O   &kp I   &kp B   &kp J   &kp M     &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
                         &trans  &trans  &trans    &trans  &trans  &trans
             >;
