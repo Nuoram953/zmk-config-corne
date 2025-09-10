@@ -115,6 +115,12 @@
             bindings = <&kt ESCAPE>;
             key-positions = <16 19>;
         };
+
+        layer_2 {
+            bindings = <&mo 6>;
+            key-positions = <37 13>;
+            layers = <5>;
+        };
     };
 
     //
@@ -195,10 +201,10 @@
 
         GAM {
             bindings = <
-&trans  &kp G           &kp Q  &kp W      &kp E      &kp R           &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LEFT_SHIFT  &kp A  &kp S      &kp D      &kp F           &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LCTRL       &kp Z  &kp X      &kp C      &kp V           &trans  &trans  &trans  &trans  &trans  &trans
-                               &lt 6 TAB  &kp SPACE  &kp LEFT_ALT    &trans  &trans  &trans
+&trans  &kp G           &kp Q  &kp W    &kp E      &kp R           &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LEFT_SHIFT  &kp A  &kp S    &kp D      &kp F           &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LCTRL       &kp Z  &kp X    &kp C      &kp V           &trans  &trans  &trans  &trans  &trans  &trans
+                               &kp TAB  &kp SPACE  &kp LEFT_ALT    &trans  &trans  &trans
             >;
 
             label = "Gaming";
