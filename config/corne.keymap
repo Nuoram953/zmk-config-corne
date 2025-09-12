@@ -54,6 +54,15 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
+
+        quick_delete: quick_delete {
+            compatible = "zmk,behavior-tap-dance";
+            label = "QUICK_DELETE";
+            #binding-cells = <0>;
+            bindings = <&kp BACKSPACE>, <&kp LC(BACKSPACE)>;
+
+            tapping-term-ms = <250>;
+        };
     };
 
     macros {
@@ -75,7 +84,7 @@
 
         delete {
             bindings = <&kp MINUS>;
-            key-positions = <21 14>;
+            key-positions = <15 20>;
             layers = <0>;
         };
 
@@ -121,6 +130,11 @@
             key-positions = <37 13>;
             layers = <5>;
         };
+
+        underscore {
+            bindings = <&kp UNDERSCORE>;
+            key-positions = <14 21>;
+        };
     };
 
     //
@@ -141,7 +155,7 @@
 &none  &kp Q       &kp W       &kp F         &kp P             &kp B            &kp J    &kp L         &kp U        &kp Y            &kp P            &none
 &none  &hm LWIN A  &hm LALT R  &hm LCTRL S   &hm LEFT_SHIFT T  &kp G            &kp M    &hm RSHIFT N  &hm RCTRL E  &hm RIGHT_ALT I  &hm RIGHT_WIN O  &none
 &none  &kp Z       &kp X       &kp C         &kp D             &kp V            &kp K    &kp H         &kp COMMA    &kp DOT          &kp FSLH         &none
-                               &lt 4 ESCAPE  &lt 1 ENTER       &kp BACKSPACE    &kp TAB  &kp SPACE     &mo 2
+                               &lt 4 ESCAPE  &lt 1 ENTER       &quick_delete    &kp TAB  &kp SPACE     &mo 2
             >;
         };
 
