@@ -155,7 +155,7 @@
 &none  &kp Q       &kp W       &kp F         &kp P             &kp B            &kp J    &kp L         &kp U        &kp Y            &kp P            &none
 &none  &hm LWIN A  &hm LALT R  &hm LCTRL S   &hm LEFT_SHIFT T  &kp G            &kp M    &hm RSHIFT N  &hm RCTRL E  &hm RIGHT_ALT I  &hm RIGHT_WIN O  &none
 &none  &kp Z       &kp X       &kp C         &kp D             &kp V            &kp K    &kp H         &kp COMMA    &kp DOT          &kp FSLH         &none
-                               &lt 4 ESCAPE  &lt 1 ENTER       &quick_delete    &kp TAB  &kp SPACE     &mo 2
+                               &lt 4 ESCAPE  &lt 1 ENTER       &quick_delete    &kp TAB  &lt 2 SPACE   &mo 2
             >;
         };
 
@@ -206,10 +206,10 @@
         NAV {
             display-name = "Navigation";
             bindings = <
-&trans  &trans        &trans        &trans            &trans          &trans    &trans  &trans    &trans        &trans         &trans           &trans
-&trans  &kp LEFT_WIN  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &trans    &trans  &kp LEFT  &kp UP_ARROW  &kp DOWN       &kp RIGHT_ARROW  &trans
-&trans  &trans        &trans        &trans            &trans          &trans    &trans  &kp HOME  &kp PAGE_UP   &kp PAGE_DOWN  &kp END          &trans
-                                    &trans            &trans          &trans    &trans  &trans    &trans
+&trans  &trans        &trans        &trans            &trans          &trans    &trans  &kp LS(LC(LEFT))  &trans        &trans         &kp LS(LC(RIGHT))  &trans
+&trans  &kp LEFT_WIN  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &trans    &trans  &kp LEFT          &kp UP_ARROW  &kp DOWN       &kp RIGHT_ARROW    &trans
+&trans  &trans        &trans        &trans            &trans          &trans    &trans  &kp HOME          &kp PAGE_UP   &kp PAGE_DOWN  &kp END            &trans
+                                    &trans            &trans          &trans    &trans  &trans            &trans
             >;
         };
 
