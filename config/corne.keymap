@@ -228,7 +228,7 @@
             bindings = <
 &trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5        &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp O   &kp I   &kp B   &kp J   &kp M         &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &kp ESCAPE    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp T   &trans  &trans  &trans  &kp ESCAPE    &trans  &trans  &trans  &trans  &trans  &trans
                         &trans  &trans  &trans        &trans  &trans  &trans
             >;
         };
