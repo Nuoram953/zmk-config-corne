@@ -135,6 +135,11 @@
             bindings = <&kp UNDERSCORE>;
             key-positions = <14 21>;
         };
+
+        equal {
+            bindings = <&kp EQUAL>;
+            key-positions = <19 7>;
+        };
     };
 
     //
@@ -215,10 +220,10 @@
 
         GAM {
             bindings = <
-&trans  &kp G           &kp Q  &kp W    &kp E      &kp R           &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LEFT_SHIFT  &kp A  &kp S    &kp D      &kp F           &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LCTRL       &kp Z  &kp X    &kp C      &kp V           &trans  &trans  &trans  &trans  &trans  &trans
-                               &kp TAB  &kp SPACE  &kp LEFT_ALT    &trans  &trans  &trans
+&trans  &kp LEFT_ALT      &kp Q  &kp W    &kp E      &kp R    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LEFT_CONTROL  &kp A  &kp S    &kp D      &kp F    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LEFT_SHIFT    &kp Z  &kp X    &kp C      &kp V    &trans  &trans  &trans  &trans  &trans  &trans
+                                 &kp TAB  &kp SPACE  &mo 6    &trans  &trans  &trans
             >;
 
             label = "Gaming";
@@ -226,10 +231,10 @@
 
         GAM_2 {
             bindings = <
-&trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5        &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp O   &kp I   &kp B   &kp J   &kp M         &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp T   &trans  &trans  &trans  &kp ESCAPE    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans        &trans  &trans  &trans
+&trans  &kp O         &kp I         &kp B         &kp J         &kp M         &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5        &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp T         &kp Y         &trans        &kp G         &kp ESCAPE    &trans  &trans  &trans  &trans  &trans  &trans
+                                    &trans        &trans        &trans        &trans  &trans  &trans
             >;
         };
     };
