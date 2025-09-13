@@ -121,7 +121,7 @@
         };
 
         esc {
-            bindings = <&kt ESCAPE>;
+            bindings = <&kp ESCAPE>;
             key-positions = <16 19>;
         };
 
@@ -139,6 +139,11 @@
         equal {
             bindings = <&kp EQUAL>;
             key-positions = <19 7>;
+        };
+
+        leftpar {
+            bindings = <&kp LEFT_PARENTHESIS>;
+            key-positions = <3 8>;
         };
     };
 
