@@ -41,7 +41,7 @@
         paraless: paraless {
             compatible = "zmk,behavior-mod-morph";
             label = "PARALESS";
-            bindings = <&kp LEFT_PARENTHESIS>, <&kp LESS_THAN>;
+            bindings = <&kp COMMA>, <&kp LESS_THAN>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
@@ -50,7 +50,7 @@
         paragreat: paragreat {
             compatible = "zmk,behavior-mod-morph";
             label = "PARAGREAT";
-            bindings = <&kp RIGHT_PARENTHESIS>, <&kp GREATER_THAN>;
+            bindings = <&kp PERIOD>, <&kp GREATER_THAN>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
@@ -63,6 +63,15 @@
             bindings = <&kp BACKSPACE>, <&kp LC(BACKSPACE)>;
 
             tapping-term-ms = <250>;
+        };
+
+        questionmark: questionmark {
+            compatible = "zmk,behavior-mod-morph";
+            label = "QUESTIONMARK";
+            bindings = <&kp SLASH>, <&kp QUESTION>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
         };
     };
 
@@ -111,21 +120,6 @@
             key-positions = <20 21 19>;
         };
 
-        Enter {
-            bindings = <&kp ENTER>;
-            key-positions = <16 15 14>;
-        };
-
-        singlequote {
-            bindings = <&kp SQT>;
-            key-positions = <6 18>;
-        };
-
-        esc {
-            bindings = <&kp ESCAPE>;
-            key-positions = <16 19>;
-        };
-
         layer_2 {
             bindings = <&mo 6>;
             key-positions = <37 13>;
@@ -140,11 +134,6 @@
         equal {
             bindings = <&kp EQUAL>;
             key-positions = <19 7>;
-        };
-
-        leftpar {
-            bindings = <&kp LEFT_PARENTHESIS>;
-            key-positions = <3 8>;
         };
     };
 
@@ -163,9 +152,9 @@
             // | GUI | CTRL | SHFT | LWR | SPC |   | ENT | RSE  | BKSP | ALT | ESC |
 
             bindings = <
-&none  &kp Q       &kp W       &kp F         &kp P             &kp B        &kp J        &kp L            &kp U         &kp Y            &kp P            &none
+&none  &kp Q       &kp W       &kp F         &kp P             &kp B        &kp J        &kp L            &kp U         &kp Y            &kp SQT          &none
 &none  &hm LWIN A  &hm LALT R  &hm LCTRL S   &hm LEFT_SHIFT T  &kp G        &kp M        &hm RSHIFT N     &hm RCTRL E   &hm RIGHT_ALT I  &hm RIGHT_WIN O  &none
-&none  &kp Z       &kp X       &kp C         &kp D             &kp V        &kp K        &kp H            &kp COMMA     &kp DOT          &kp FSLH         &none
+&none  &kp Z       &kp X       &kp C         &kp D             &kp V        &kp K        &kp H            &paraless     &paragreat       &questionmark    &none
                                &lt 8 ESCAPE  &lt 4 SPACE       &lt 7 TAB    &lt 2 ENTER  &lt 1 BACKSPACE  &lt 2 DELETE
             >;
         };
