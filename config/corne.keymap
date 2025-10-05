@@ -216,10 +216,10 @@
         NAV {
             display-name = "Navigation";
             bindings = <
-&trans  &trans        &trans        &trans            &trans          &trans    &trans  &kp LS(LC(LEFT))  &trans        &trans         &kp LS(LC(RIGHT))  &trans
-&trans  &kp LEFT_WIN  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &trans    &trans  &kp LEFT          &kp UP_ARROW  &kp DOWN       &kp RIGHT_ARROW    &trans
-&trans  &trans        &trans        &trans            &trans          &trans    &trans  &kp HOME          &kp PAGE_UP   &kp PAGE_DOWN  &kp END            &trans
-                                    &trans            &trans          &trans    &trans  &trans            &trans
+&trans  &trans        &trans        &trans            &trans          &trans    &kp LC(Y)     &kp LC(P)      &kp LC(C)     &kp LC(X)      &kp LC(Z)        &trans
+&trans  &kp LEFT_WIN  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &trans    &kp CAPSLOCK  &kp LEFT       &kp UP_ARROW  &kp DOWN       &kp RIGHT_ARROW  &trans
+&trans  &trans        &trans        &trans            &trans          &trans    &kp INSERT    &kp HOME       &kp PAGE_UP   &kp PAGE_DOWN  &kp END          &trans
+                                    &trans            &trans          &trans    &kp ENTER     &kp BACKSPACE  &kp DELETE
             >;
         };
 
