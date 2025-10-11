@@ -155,7 +155,7 @@
 &none  &kp Q       &kp W       &kp F         &kp P             &kp B        &kp J        &kp L            &kp U         &kp Y            &kp SQT          &none
 &none  &hm LWIN A  &hm LALT R  &hm LCTRL S   &hm LEFT_SHIFT T  &kp G        &kp M        &hm RSHIFT N     &hm RCTRL E   &hm RIGHT_ALT I  &hm RIGHT_WIN O  &none
 &none  &kp Z       &kp X       &kp C         &kp D             &kp V        &kp K        &kp H            &paraless     &paragreat       &questionmark    &none
-                               &lt 8 ESCAPE  &lt 4 SPACE       &lt 7 TAB    &lt 2 ENTER  &lt 1 BACKSPACE  &lt 2 DELETE
+                               &lt 8 ESCAPE  &lt 4 SPACE       &lt 7 TAB    &lt 2 ENTER  &lt 1 BACKSPACE  &lt 3 DELETE
             >;
         };
 
