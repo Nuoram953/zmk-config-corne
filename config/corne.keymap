@@ -228,7 +228,7 @@
             bindings = <
 &trans  &kp O         &kp I         &kp B         &kp J         &kp M         &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5        &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp T         &kp Y         &trans        &kp G         &kp ESCAPE    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp T         &kp Y         &kp ENTER     &kp G         &kp ESCAPE    &trans  &trans  &trans  &trans  &trans  &trans
                                     &trans        &trans        &trans        &trans  &trans  &trans
             >;
         };
