@@ -92,12 +92,6 @@
     combos {
         compatible = "zmk,combos";
 
-        delete {
-            bindings = <&kp MINUS>;
-            key-positions = <15 20>;
-            layers = <0>;
-        };
-
         Semicolon {
             bindings = <&kp SEMICOLON>;
             key-positions = <32 33>;
@@ -115,25 +109,10 @@
             layers = <5>;
         };
 
-        Space {
-            bindings = <&kp SPACE>;
-            key-positions = <20 21 19>;
-        };
-
         layer_2 {
             bindings = <&mo 6>;
             key-positions = <37 13>;
             layers = <5>;
-        };
-
-        underscore {
-            bindings = <&kp UNDERSCORE>;
-            key-positions = <14 21>;
-        };
-
-        equal {
-            bindings = <&kp EQUAL>;
-            key-positions = <19 7>;
         };
     };
 
